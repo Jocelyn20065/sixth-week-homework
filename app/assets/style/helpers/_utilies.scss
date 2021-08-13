@@ -1,0 +1,79 @@
+
+// fixed Modal
+
+.modal.right .modal-dialog {
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height:80%;
+    margin: 0;
+    transform: translate3d(0%, 0, 0);
+  }
+  
+  .modal.right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+  }
+  .modal {
+    &-content {
+      border-radius: 0;
+      border: none;
+    }
+    &-header {
+      border-bottom: none;
+    }
+    &-body{
+      .card{
+        max-width: 540px;
+      }
+    }
+    &-footer {
+      border-top: none;
+    }
+  }
+
+//fixed modal end.
+
+
+
+.nav-scroller {
+    height: 2.70rem; /* 隱藏下方捲軸 */
+    overflow-y: hidden; 
+    border-bottom: 1px solid $dark;
+    border-top: 1px solid $dark;
+}
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    ; /* 隱藏下方捲軸 */
+    overflow-x:scroll;
+    white-space: nowrap;
+}
+
+
+
+.radius-left-0{
+    border-top-left-radius:0;
+}
+.radius-right-0{
+    border-bottom-left-radius: 0;
+}
+
+.font-weight-bold{
+    font-weight: bold;
+}
+.font-weight-normal{
+    font-weight: normal;
+}
+.height-fixed{
+    height: 100%;
+}
+
+.a-hover{
+    border-bottom:1px solid transparent;
+    &:hover{
+      border-bottom:1px solid $primary;
+    }
+  }
+  
