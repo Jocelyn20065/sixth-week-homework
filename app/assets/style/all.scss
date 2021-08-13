@@ -1,9 +1,0 @@
-@import "../../../node_modules/bootstrap/scss/functions";
-@import "./helpers/variables";// 如果自行修改/新增變數，改這個
-@import "../../../node_modules/bootstrap/scss/bootstrap"; // bootstrap的檔案
-@import"./helpers/utilies";
-@import"./helpers/mixin";
-
-@import "./layout/layout.scss";
-@import './layout/index.scss';
-@import "./layout/exhibition.scss";

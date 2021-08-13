@@ -1,11 +1,76 @@
----
-title: exhibition
-layout: ./app/layout.ejs
-engine: ejs
-current: 首頁
+<!DOCTYPE html>
+<html lang="en">
 
----
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exhibition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
 
+  <body>
+    <nav class="navbar navbar-light bg-light m-auto flex-nowrap">
+      <div class="container position-relative">
+        <a class="navbar-brand text-brown fs-3 m-auto" href="\">EXHIBINECTION</a>
+        <ul class="navbar-nav position-absolute nav-bar-absolute flex-row">
+            <li class="nav-item  d-none d-md-inline-block">
+              <a class="nav-link a-hover me-10" href="#">Sign in</a>
+            </li>
+            <li class="nav-item d-none d-md-inline-block">
+              <a class="nav-link a-hover me-10" href="#">Sign up</a>
+            </li>
+            <li class="nav-item">
+                  <!-- Button trigger modal -->
+              <button type="button" class="btn btn-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span class="material-icons">
+                confirmation_number
+                </span></button>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+<!-- Modal -->
+<!-- 新增 .right -->
+<div class="modal right fade modal-dialog modal-dialog-scrollable" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title text-light font-weight-bold fs-2" id="staticBackdropLabel">Cart List</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li class="bg-light">
+            <span class="material-icons">
+              close
+              </span>
+            <div class="d-flex justify-content-around align-items-center">
+              <div class="cart-img mb-4 ms-1"></div>
+              <p class=" font-weight-bold fs-6">2020 台味設計展<br>01 JUN — 31 OCT <br><span class="font-weight-normal">全票</span> <br> <span class="font-weight-bold fs-5">NT$350</span> </p>
+              <ul class=" d-flex justify-content-center align-items-center ps-0 mt-1">
+                <li class="list-unstyled vertical-middle"><span class="material-icons">
+               remove</span></li>
+               <li class="list-unstyled"><p class="mb-1">01</p></li>
+               <li class="list-unstyled"><span class="material-icons">
+               add</span></li>
+             </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">前往結帳</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+    
 <div class="main">
 <!-- main nav-bar as below -->
 <div class="nav-scroller mb-9">
@@ -150,3 +215,40 @@ current: 首頁
 </div>
 
 
+
+
+    <footer class="footer mt-4">
+      <div class="FooterBanner d-flex flex-column justify-content-end">
+        <div class="container">
+          <h2 class="text-light fs-2 font-weight-bold mb-7">想收到展覽的最新消息嗎？ <br> 快訂閱我們！</h2>
+          <div class="input-group SubmitButtonGroup mb-3">
+            <input type="text" class="form-control SubmitButton" placeholder="輸入您的電子信箱" aria-label="Recipient's email" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-primary SubmitButton radius-left-0 radius-right-0" type="button">訂閱</button>
+            </div>
+          </div>          
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-end">
+        <div class="container">
+          <div class="footer-info d-flex align-items-center">
+            <a class="navbar-brand text-brown fs-4" href="#">EXHIBINECTION</a>
+            <p class="fs-6 mb-0">© 2020. All Rights Reserved.</p>
+          </div>
+            <ul class="navbar-nav d-none d-lg-flex">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign up</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
