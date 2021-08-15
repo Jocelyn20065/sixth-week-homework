@@ -1,0 +1,172 @@
+---
+title: checkout3
+layout: ./app/layout.ejs
+engine: ejs
+current: 首頁
+
+---
+
+<div class="main">
+    <div class="container">
+        <!-- timeline-section start -->
+        <div class="row timeline-section mt-10">
+            <div class="col-md-8">
+                <ul class="d-flex justify-content-between border-top border-primary border-3 pe-5">
+                    <li class="list-unstyled timeline-pointer active"><p class="pt-7">確認訂單</p></li>
+                    <li class="list-unstyled timeline-pointer active"><p class="pt-7" >填寫訂購資訊</p></li>
+                    <li class="list-unstyled timeline-pointer active"><p class="pt-7">填寫付款資訊</p></li>
+                    <li class="list-unstyled timeline-pointer "><p class="pt-7">完成訂購</p></li>
+                </ul>
+            </div>
+        </div>
+        <!-- timeline-section end. -->
+        <!-- shopping-item start -->
+        <div class="row shopping-item">
+            <div class="d-none  col-md-8 d-md-flex flex-column justify-content-between" >
+                <ul class="d-flex flex-column ps-0 " >
+                    <li class="d-flex justify-content-between align-items-center mb-4">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true" alt="2020台味設計展" class="shopping-pic">
+                        <div class="ticke-detail ">
+                            <h3 class="fs-6 font-weight-bold lh-base">2020 台味設計展 <br> 01 JUN — 31 OCT</h3>
+                            <span class="text-gray">全票</span>
+                        </div>
+                        <span>NT$350</span>
+                        <ul class=" d-flex justify-content-center ps-0 mt-1">
+                            <li class="list-unstyled pe-7 visibility-hidden"><span class="material-icons ">
+                           remove</span></li>
+                           <li class="list-unstyled pe-7"><p class="mb-0">1</p></li>
+                           <li class="list-unstyled pe-7 visibility-hidden"><span class="material-icons">
+                           add</span></li>
+                         </ul>
+                         <span class="material-icons visibility-hidden">
+                            close
+                            </span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center  mb-4 ">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg?raw=true" alt="No.22 線上設計展" class="shopping-pic">
+                        <div class="ticke-detail ">
+                            <h3 class="fs-6 font-weight-bold lh-base">No.22 線上設計展 <br> 01 JUN — 31 OCT</h3>
+                            <span class="text-gray">全票</span>
+                        </div>
+                        <span>NT$350</span>
+                        <ul class=" d-flex justify-content-center ps-0 mt-1">
+                            <li class="list-unstyled pe-7 visibility-hidden"><span class="material-icons">
+                           remove</span></li>
+                           <li class="list-unstyled pe-7"><p class="mb-0">1</p></li>
+                           <li class="list-unstyled pe-7 visibility-hidden"><span class="material-icons">
+                           add</span></li>
+                         </ul>
+                         <span class="material-icons visibility-hidden">
+                            close
+                            </span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center  mb-4">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true" alt="高雄設計節" class="shopping-pic">
+                        <div class="ticke-detail ">
+                            <h3 class="fs-6 font-weight-bold lh-base">高雄設計節 <br> 01 JUN — 31 OCT</h3>
+                            <span class="text-gray">全票</span>
+                        </div>
+                        <span>NT$350</span>
+                        <ul class=" d-flex justify-content-center ps-0 mt-1">
+                            <li class="list-unstyled pe-7 visibility-hidden"><span class="material-icons">
+                           remove</span></li>
+                           <li class="list-unstyled pe-7"><p class="mb-0">1</p></li>
+                           <li class="list-unstyled pe-7 visibility-hidden"><span class="material-icons">
+                           add</span></li>
+                         </ul>
+                         <span class="material-icons visibility-hidden">
+                            close
+                            </span>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col-md-2">
+                        <a href="ticket-page2.html" class="btn btn-outline-brown btn-lg mt-7">返回</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-4 d-flex flex-column justify-content-between">
+                <form action="">
+                    <h2 class="font-weight-bold fs-5">付款資訊</h2>
+                    <label class="form-label mt-4" for="credit-account">信用卡帳號</label>
+                    <input type="text" id="credit-account" class="form-control w-100"placeholder="Xxxx-xxxx-xxxx-xxxx">
+                    <label class="form-label mt-4" for="expiry-date">有效日期</label>
+                    <input type="text" id="expiry-date" class="form-control w-100" placeholder="(MM/YY)">
+                    <label class="form-label mt-4" for="safecode">安全碼</label>
+                    <input type="password" id="safecode" class="form-control w-100"placeholder="***">
+                    <label class="form-label mt-4 visibility-hidden" for="coupon"></label>
+                    <input type="text" id="" class="form-control w-100 visibility-hidden d-none d-md-block"placeholder="">
+                    <p class="text-end text-brown"></p>
+                </form>
+                
+                <div class="sum-area mt-8">
+                    <ul class="amount mb-0  ps-0">
+                        <li class=" d-flex justify-content-between fs-6 font-weight-bold lh-base"><span>小計</span><span class="font-weight-normal">NT$1050</span></li>
+                        <li class="d-flex justify-content-between fs-6 font-weight-bold lh-base"><span>折扣</span><span class="font-weight-normal">-NT$50</span></li>
+                        <li class="d-flex justify-content-between fs-5 font-weight-bold lh-base"><span>總金額</span><span>NT$1050</span></li>   
+                    </ul>
+                        <!-- 手機票務介面如下 -->
+            <div class="d-md-none flex-column justify-content-between " >
+                <ul class="d-flex flex-column ps-0 " >
+                    <li class="d-flex align-items-center justify-content-between mb-4">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true" alt="2020台味設計展" class="shopping-pic w-50 me-7">
+                        <div class="ticket-sm-detail w-50 ">
+                            <div class="ticket-sm-name">
+                                <h3 class="fs-6 font-weight-bold lh-base">2020 台味設計展</h3>
+                            </div>
+                            <span class="font-weight-bold">01 JUN — 31 OCT</span>
+                            <div class="ticket-sm-price d-flex justify-content-between">
+                                <h3 class="fs-6  lh-base">全票 <span class="font-weight-bold">1</span></h3>
+                                <span class="font-weight-bold">
+                                    NT$350
+                                    </span>
+                            </div>
+                        </div>                
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between mb-4">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg?raw=true" alt="2020台味設計展" class="shopping-pic w-50 me-7">
+                        <div class="ticket-sm-detail w-50 ">
+                            <div class="ticket-sm-name">
+                                <h3 class="fs-6 font-weight-bold lh-base">高雄設計節</h3>
+                            </div>
+                            <span class="font-weight-bold">01 JUN — 31 OCT</span>
+                            <div class="ticket-sm-price d-flex justify-content-between">
+                                <h3 class="fs-6  lh-base">全票 <span class="font-weight-bold">1</span></h3>
+                                <span class="font-weight-bold">
+                                    NT$350
+                                    </span>
+                            </div>
+                        </div>                
+                    </li>
+                   
+                    <li class="d-flex align-items-center justify-content-between mb-4">
+                        <img src=" https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true" alt="2020台味設計展" class="shopping-pic w-50 me-7">
+                        <div class="ticket-sm-detail w-50 ">
+                            <div class="ticket-sm-name">
+                                <h3 class="fs-6 font-weight-bold lh-base">No.22 線上設計展</h3>
+                            </div>
+                            <span class="font-weight-bold">01 JUN — 31 OCT</span>
+                            <div class="ticket-sm-price d-flex justify-content-between">
+                                <h3 class="fs-6  lh-base">全票 <span class="font-weight-bold">1</span></h3>
+                                <span class="font-weight-bold">
+                                    NT$350
+                                    </span>
+                            </div>
+                        </div>                
+                    </li>
+                </ul>              
+            </div>
+                <!-- 手機介面結束 -->
+                <a href="ticket-page4.html" class="d-none d-md-block btn btn-primary btn-lg mt-7 w-100">下一步</a>
+                <div class="btn-area d-md-none d-flex">
+                    <a href="ticket-page2.html" class="btn  btn-outline-brown btn-lg mt-7 me-7 w-50">返回</a>
+                    <a href="ticket-page4.html" class=" btn btn-primary btn-lg mt-7 w-50">下一步</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- shopping-item end. -->
+            
+    </div>
+</div>

@@ -9,6 +9,11 @@
 .ticket-info{
     height: 256px;
 }
+.border-side{
+    @include media-breakpoint-up(md) {
+        border-right: 1px solid $dark;
+        }
+    }
 .ticket-btn{
     height:120px;
 }

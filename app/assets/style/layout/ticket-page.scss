@@ -1,0 +1,17 @@
+.shopping-pic{
+    max-width: 100%;
+    @include media-breakpoint-up(md) {
+    max-width: 170px;}
+}
+.ticket-last-area{
+    margin-top: 42px;
+    @include media-breakpoint-up(md) {
+        margin-top: 104px;
+    }
+    .btn-area{
+        margin-top: 90px;
+        @include media-breakpoint-up(md) {
+            margin-top: 96px;
+        }
+    }
+}

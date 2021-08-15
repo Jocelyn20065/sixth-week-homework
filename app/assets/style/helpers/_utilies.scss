@@ -1,41 +1,30 @@
+img{
+  max-width: 100%;
+  height: auto;
+}
 
-// fixed Modal
 
-.modal.right .modal-dialog {
-    position:fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height:80%;
-    margin: 0;
-    transform: translate3d(0%, 0, 0);
+
+
+//offcanva as new modal
+
+.offcanvas-right{
+  position: fixed;
+  top:90px;
+  width: 540px;
+  .cart-list::-webkit-scrollbar{
+    width:3px;
+    background-color:$light;
   }
-  
-  .modal.right .modal-content {
-    height: 100%;
-    overflow-y: auto;
+  .cart-list::-webkit-scrollbar-thumb {
+    background-color: $primary;
   }
-  .modal {
-    &-content {
-      border-radius: 0;
-      border: none;
-    }
-    &-header {
-      border-bottom: none;
-    }
-    &-body{
-      .card{
-        max-width: 540px;
-      }
-    }
-    &-footer {
-      border-top: none;
-    }
-  }
+}
 
-//fixed modal end.
+//offcanva end.
 
 
+// nav-scroller effect
 
 .nav-scroller {
     height: 2.70rem; /* 隱藏下方捲軸 */
@@ -51,7 +40,7 @@
     white-space: nowrap;
 }
 
-
+// general setting
 
 .radius-left-0{
     border-top-left-radius:0;
@@ -77,3 +66,40 @@
     }
   }
   
+
+
+
+  //偽元素
+  
+
+.timeline-pointer{
+  position: relative;
+  &::before{
+    content:"";
+    position: absolute;
+    left: 50%;
+    top:-3px;
+    bottom:12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border:$primary 1px solid;
+    transform: translate(-50%,-25%);
+    background-color: $light;
+  }
+  
+}
+.timeline-pointer.active{
+  font-weight: bold;
+  &::before{
+    background-color:$primary;
+  }
+}
+
+//隱藏但占空間
+.visibility-hidden{
+  @include media-breakpoint-up(md) {
+    visibility: hidden;
+}
+  
+}
