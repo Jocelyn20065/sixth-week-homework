@@ -37,14 +37,17 @@
     height: 100%;
   } // 這個一定要加，不然會有x軸
 
+
+// size below according to the design layout
 .swiper-slide img {
-    display: block;
-    width:100%;
-    height:auto;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
   }
 
-
+  .swiper-slide {
+    width: auto !important;
+  }
 
 
   //swiper css end.
