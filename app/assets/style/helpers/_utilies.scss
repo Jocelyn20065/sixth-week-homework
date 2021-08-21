@@ -1,11 +1,5 @@
 // general setting
 
-.radius-left-0{
-  border-top-left-radius:0;
-}
-.radius-right-0{
-  border-bottom-left-radius: 0;
-}
 
 .font-weight-bold{
   font-weight: bold;
@@ -13,9 +7,13 @@
 .font-weight-normal{
   font-weight: normal;
 }
-.height-fixed{
-  height: 100%;
-}
+// 建議:使用bootstrap的通用類別 (無法成功導入?)
+
+// .height-fixed{
+//   height: 100%;
+// } 移除，改用bst h-100 取代
+
+
 
 .a-hover{
   border-bottom:1px solid transparent;
@@ -31,69 +29,3 @@
 }
   
 }
-
-
-//offcanva as new modal
-
-.offcanvas-right{
-  position: fixed;
-  top:90px;
-  width: 540px;
-  .cart-list::-webkit-scrollbar{
-    width:3px;
-    background-color:$light;
-  }
-  .cart-list::-webkit-scrollbar-thumb {
-    background-color: $primary;
-  }
-}
-
-//offcanva end.
-
-
-// nav-scroller effect
-
-.nav-scroller {
-    height: 2.70rem; /* 隱藏下方捲軸 */
-    overflow-y: hidden; 
-    border-bottom: 1px solid $dark;
-    border-top: 1px solid $dark;
-}
-.nav-scroller .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    ; /* 隱藏下方捲軸 */
-    overflow-x:scroll;
-    white-space: nowrap;
-}
-
-
-
-  //偽元素
-  
-
-.timeline-pointer{
-  position: relative;
-  &::before{
-    content:"";
-    position: absolute;
-    left: 50%;
-    top:-3px;
-    bottom:12px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    border:$primary 1px solid;
-    transform: translate(-50%,-25%);
-    background-color: $light;
-  }
-  
-}
-.timeline-pointer.active{
-  font-weight: bold;
-  &::before{
-    background-color:$primary;
-  }
-}
-
-

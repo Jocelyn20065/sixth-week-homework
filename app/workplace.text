@@ -1,0 +1,78 @@
+from 六角學院助教 jasonlu
+
+
+以下為 第六週 - 藝術展覽 建議:
+
+
+
+整體:
+
+SCSS 資料夾:
+index.scss、ticket-page.scss、exhibition.scss 為各頁面的 scss，建議移出 layout 資料夾，放在 pages 資較夾
+_utilies.scss 內的 .offcanvas-right、.nav-scroller、.timeline-pointer 為元件，建議移至 component 資料夾
+_utilies.scss 內的 font-weight 設定可以改成使用 Bootstrap 的 通用類別 .fw-（文件）
+_utilies.scss 內的 .height-fixed 設定可以改成使用 Bootstrap 的 通用類別 .h-100 ( 文件 )
+helpers 資料夾內的 _base.scss 為全站設定，建議移至 base 資料夾
+_base.scss 內的 border-box 設定可以移除，因為 Bootstrap 已經有設定過了。
+layout.scss 內的 swiper 設定是第三方套件的樣式修改，建議獨立出來。ex: vendors/_swiper.scss
+exhibition.scss、index.scss、layout.scss、ticket-page.scss 為合併用的 SCSS，需要在檔名前面加上 " _ "
+
+
+
+
+表頭:
+
+.nav 設定的 .m-auto、.flex-nowrap 可以移除
+.cart-list 內的 add 按鈕 建議使用 <button>
+
+
+表尾:
+
+h2、input-group 可以使用格線
+footer-info 內的 a 標籤可以連結到 index.html
+
+
+
+
+index.html:
+
+HomeBanner 內的標題、連結在手機板的時候要靠下對齊。
+.ExhibitPhoto 建議加上 object-fit:cover;
+HotExhibit 內的 3 個 .card 建議是 ul>li.row*3>.col 結構；另外這邊可以不需要加上 .card
+HotExhibit 的圖片建議改成 .col-md-5.col-lg-4；文字建議改成 .col-md-7.col-lg-8
+直播回顧、熱門特展區塊的背景在手機是滿版的，需要座以下調整:
+.container 加上 gx-0.gx-md-3
+熱門特展區塊的 row 加上 gx-0
+在熱門特展區塊的圖片 加上 px-3.px-md-0
+
+
+
+
+exhibiton.html:
+
+height-fixed 可以移除
+" 2020 台味設計展 " h2 標題建議設定 flex 交錯軸對齊
+票種按鈕可以使用 bootstrap 的 checkbox
+add、remove icon 可以使用 <button>
+購買票券、詳細資訊連結建議加上 .w-100
+建議把 .ticket-banner 加入 exhibi-intro 內的格線，並且在文字內容區塊的格線加上 order-first order-md-last
+
+
+ticket-page1.html:
+
+timeline-section 內的 ul 在 375px 的時候建議調整左右的 padding 讓文字不會換行
+平板 768px 的票務介面建議切換成手機板的
+
+
+
+
+ticket-page2.html、ticket-page3.html、ticket-page4.html 共同建議:
+
+返回按鈕建議加上 .w-100
+
+
+Note:
+2021.08.21
+修正以上錯誤
+新增products 頁面(introduction.html)
+**font-weight還是無法成功套入bst 效果

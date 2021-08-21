@@ -4,11 +4,11 @@ $(function() {
  
 //Initialize Swiper
 
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // }, -->下方圓形的換頁效果，設計稿沒有，不用加。
-  });
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: "auto", //這裡如果設3，手機模式會無法順利滑動。
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
