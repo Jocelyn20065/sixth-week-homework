@@ -31,20 +31,11 @@
 
 
 
-.FooterBanner{
-    background-image:url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg?raw=true");
-    height: 400px;
+
+.footer-banner{
+    background-image: url('https://upload.cc/i1/2021/10/30/fdt4Gv.jpg');
     background-position:center;
     background-size: cover;
-    .SubmitButtonGroup{
-        width: 350px;
-        border:0;
-        .SubmitButton{
-            &:focus{
-                box-shadow: none;
-                border:0;
-            }
-        }
-    }
-    
-}
+    height: 400px;
+    width: 100%;
+  }
