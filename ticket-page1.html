@@ -38,7 +38,7 @@
 
 <div class="offcanvas offcanvas-end offcanvas-right bg-dark pe-3 " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header p-0">
-    <h5 id="offcanvasRightLabel" class="text-light ps-10 pt-10 fs-2 font-weight-bold">Cart List</h5>
+    <h5 id="offcanvasRightLabel" class="text-light ps-10 pt-10 fs-2 fw-bold ">Cart List</h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body p-0 cart-list pe-3">
@@ -49,7 +49,7 @@
           </span>
         <div class="d-flex justify-content-around align-items-center">
           <h4 class="cart-img mb-4 ms-1 d-none d-sm-block"></h4>
-          <p class=" font-weight-bold fs-6">2020 台味設計展<br>01 JUN — 31 OCT <br><span class="font-weight-normal">全票</span> <br> <span class="font-weight-bold fs-5">NT$350</span> </p>
+          <p class=" fw-bold fs-6">2020 台味設計展<br>01 JUN — 31 OCT <br><span class="font-weight-normal">全票</span> <br> <span class="font-weight-bold fs-5">NT$350</span> </p>
           <ul class=" d-flex justify-content-center align-items-center ps-0 mt-1">
             <li class="list-unstyled vertical-middle"><button class="btn"><span class="material-icons">
               remove</span></button></li>
@@ -65,7 +65,7 @@
           </span>
         <div class="d-flex justify-content-around align-items-center">
           <h4 class="cart-img mb-4 ms-1 d-none d-sm-block"></h4>
-          <p class=" font-weight-bold fs-6">2020 台味設計展<br>01 JUN — 31 OCT <br><span class="font-weight-normal">全票</span> <br> <span class="font-weight-bold fs-5">NT$350</span> </p>
+          <p class="fw-bold  fs-6">2020 台味設計展<br>01 JUN — 31 OCT <br><span class="font-weight-normal">全票</span> <br> <span class="font-weight-bold fs-5">NT$350</span> </p>
           <ul class=" d-flex justify-content-center align-items-center ps-0 mt-1">
             <li class="list-unstyled vertical-middle"><button class="btn"><span class="material-icons">
               remove</span></button></li>
@@ -81,7 +81,7 @@
           </span>
         <div class="d-flex justify-content-around align-items-center">
           <h4 class="cart-img mb-4 ms-1 d-none d-sm-block"></h4>
-          <p class=" font-weight-bold fs-6">2020 台味設計展<br>01 JUN — 31 OCT <br><span class="font-weight-normal">全票</span> <br> <span class="font-weight-bold fs-5">NT$350</span> </p>
+          <p class="fw-bold  fs-6">2020 台味設計展<br>01 JUN — 31 OCT <br><span class="font-weight-normal">全票</span> <br> <span class="font-weight-bold fs-5">NT$350</span> </p>
           <ul class=" d-flex justify-content-center align-items-center ps-0 mt-1">
             <li class="list-unstyled vertical-middle"><button class="btn"><span class="material-icons">
               remove</span></button></li>
@@ -283,73 +283,71 @@
 </div>
 
 
-<!-- swiper as below -->
-
-<!-- Swiper -->
-<div class="container">
-  <h2 class="mb-4 mt-5 font-weight-bold">猜你也喜歡...</h2>
-  <div class="row">
-    <div class="offset-md-1 col-12 col-md-11">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-              <img src="https://upload.cc/i1/2021/08/15/1iZTSX.jpg" class="recommendationPhoto" alt="No.22 線上設計展">
-              <h3 class="font-weight-bold fs-6 mt-1"><a href="#"  class="text-decoration-none text-dark"> No.22 線上設計展</a></h3>
-              <span>$350</span>
-          </div>
-          <div class="swiper-slide">
-            <img src="https://upload.cc/i1/2021/08/12/XFWPsG.jpg" class="recommendationPhoto" alt="No.22 線上設計展">
-            <h3 class="font-weight-bold fs-6 mt-1"><a href="#"  class="text-decoration-none text-dark"> No.22 線上設計展</a></h3>
-            <span>$350</span>
-          </div>
-          <div class="swiper-slide" >
-            <img src="https://upload.cc/i1/2021/08/12/3ZOQea.jpg" class="recommendationPhoto" alt="No.22 線上設計展">
-            <h3 class="font-weight-bold fs-6 mt-1"><a href="#"  class="text-decoration-none text-dark" > No.22 線上設計展</a></h3>
-            <span>$350</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- footer area -->
-
-    <footer class="footer mt-4">
-      <div class="FooterBanner d-flex flex-column justify-content-end">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-4">
-              <h2 class="text-light fs-2 font-weight-bold mb-7">想收到最新消息嗎？ <br> 快訂閱我們！</h2>
-              <div class="input-group SubmitButtonGroup mb-10">
-                <input type="text" class="form-control SubmitButton" placeholder="輸入您的電子信箱" aria-label="Recipient's email" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-primary radius-left-0 radius-right-0" type="button">訂閱</button>
-                </div>
+    <footer class="footer">
+      <div class="footer-swiper container">
+        <h2 class="mb-5 fw-bold">猜你也喜歡...</h2>
+        <div class="swiper exhibitionSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"> 
+              <a href="#" class="text-decoration-none text-dark">
+                <img src="https://upload.cc/i1/2021/10/30/hOYTu9.jpg">
+                <h3 class="fs-5 fw-bold lh-base mb-1">No.22 線上設計展</h3>
+                <span class="fs-5">$350</span>
+              </a>  
+            </div>
+            <div class="swiper-slide"> 
+              <a href="#" class="text-decoration-none text-dark">
+                <img src="https://upload.cc/i1/2021/08/12/XFWPsG.jpg">
+                <h3 class="fs-5 fw-bold lh-base mb-1">No.22 線上設計展</h3>
+                <span class="fs-5">$350</span> 
+              </a> 
+            </div>
+            <div class="swiper-slide"> 
+              <a href="#" class="text-decoration-none text-dark">
+                <img src="https://upload.cc/i1/2021/08/12/3ZOQea.jpg">
+                <h3 class="fs-5 fw-bold lh-base mb-1">No.22 線上設計展</h3>
+                <span class="fs-5">$350</span> 
+              </a> 
+            </div>
+            <div class="swiper-slide"> 
+              <a href="#" class="text-decoration-none text-dark">
+                <img src="https://upload.cc/i1/2021/10/30/hOYTu9.jpg">
+                <h3 class="fs-5 fw-bold lh-base mb-1">No.22 線上設計展</h3>
+                <span class="fs-5">$350</span> 
+              </a> 
             </div>
           </div>
-          </div>          
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-end">
-        <div class="container">
-          <div class="footer-info d-md-flex align-items-center">
-            <a class="navbar-brand text-brown fs-4" href="index.html">EXHIBINECTION</a>
-            <p class="fs-6 mb-0">© 2020. All Rights Reserved.</p>
+      <div class="footer-banner mt-9">
+        <div class="container d-flex flex-column justify-content-center h-100">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="footer-text-area">
+                <h2 class="text-white lh-base fw-bold">想收到最新消息嗎？ <br> 快訂閱我們！</h2>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="輸入您的電子信箱" aria-describedby="button-addemail">
+                  <button class="btn btn-primary px-5" type="button" id="button-addemail">訂閱</button>
+                </div>
+              </div>
+            </div>
           </div>
-            <ul class="navbar-nav d-none d-lg-flex">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sign in</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sign up</a>
-              </li>
-            </ul>
         </div>
-      </nav>
+      </div>
+      <div class="footer-navbar container">
+        <div class="flex-area d-flex justify-content-between align-items-center">
+          <div class="sub-title d-flex align-items-center text-dark">
+            <h3 class="mb-0"><a href="#" class="text-decoration-none fs-4 text-dark">EXHIBINECTION</a></h3>
+            <span class="ms-3">  © 2020. All Rights Reserved.</span>
+          </div>
+          <ul class="signbar d-flex list-unstyled ">
+            <li><a href="#" class=" text-decoration-none pe-4 text-dark">Sign In</a></li>
+            <li><a href="#" class=" text-decoration-none pe-4 text-dark">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
+
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
